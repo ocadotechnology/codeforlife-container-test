@@ -6,5 +6,3 @@ services:
       # Mount the root folder that contains .git
       - .:/workspace:cached
     command: sleep infinity
-    # links:
-    #   - node-app
