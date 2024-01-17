@@ -1,0 +1,36 @@
+{
+  // "name": "codeforlife",
+  // "image": "mcr.microsoft.com/vscode/devcontainers/python:3.8",
+  // "features": {
+  //   "ghcr.io/devcontainers-contrib/features/pipenv:2": {
+  //     "version": "2023.11.15"
+  //   }
+  // },
+  // "postCreateCommand": "pipenv install --dev",
+  // "customizations": {
+  //   "vscode": {
+  //     "settings": {},
+  //     "extensions": [
+  //       "ms-python.python"
+  //     ]
+  //   }
+  // }
+  "name": "Python",
+  "dockerComposeFile": [
+    "../../docker-compose.yaml"
+  ],
+  "service": "python-api",
+  "shutdownAction": "none",
+  "workspaceFolder": "/workspace/service1",
+  "remoteUser": "root",
+  "customizations": {
+    "vscode": {
+      // "settings": {
+      //   "python.defaultInterpreterPath": ".venv/bin/python"
+      // },
+      "extensions": [
+        "ms-python.python"
+      ]
+    }
+  }
+}

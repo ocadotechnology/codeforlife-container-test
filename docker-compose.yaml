@@ -1,0 +1,8 @@
+version: '3'
+services:
+  python-api:
+    image: mcr.microsoft.com/devcontainers/base:jammy
+    volumes:
+      # Mount the root folder that contains .git
+      - .:/workspace:cached
+    # command: sleep infinity
