@@ -5,4 +5,6 @@ services:
     volumes:
       # Mount the root folder that contains .git
       - .:/workspace:cached
-    # command: sleep infinity
+    command: sleep infinity
+    # links:
+    #   - node-app
