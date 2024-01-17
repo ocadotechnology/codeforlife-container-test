@@ -2,7 +2,7 @@
 version: '3'
 services:
   python-api:
-    image: mcr.microsoft.com/devcontainers/base:jammy
+    image: mcr.microsoft.com/devcontainers/base:ubuntu-22.04
     volumes:
       # Mount the root folder that contains .git
       - .:/workspace:cached
